@@ -34,7 +34,7 @@ public class User implements Serializable {
 	@GeneratedValue
 	private Long id;
 
-	@NotNull(message = "Last name est obligatoire")
+	@NotNull(message = "Last name is mandatory")
 	private String lastName;
 
 	@NotNull(message = "First name is mandatory")
@@ -53,20 +53,5 @@ public class User implements Serializable {
 	private String mail;
 
 	private String phoneNumber;
-
-//	public User(@NotNull(message = "Last name est obligatoire") String lastName,
-//			@NotNull(message = "First name is mandatory") String firstName,
-//			@NotNull(message = "country is mandatory") String country,
-//			@NotNull(message = "Birthdate is mandatory") LocalDate birthDate, Gender gender,
-//			@Email(message = "Email format not valid") String mail, String phoneNumber) {
-//		super();
-//		this.lastName = lastName;
-//		this.firstName = firstName;
-//		this.country = country;
-//		this.birthDate = birthDate;
-//		this.gender = gender;
-//		this.mail = mail;
-//		this.phoneNumber = phoneNumber;
-//	}
 
 }
